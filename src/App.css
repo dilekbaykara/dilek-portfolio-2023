@@ -151,6 +151,8 @@
 }
 
 p {
+  font-family: stevie-sans, sans-serif;
+  font-weight: 500;
   padding: 2px;
   margin: 1px;
 }
