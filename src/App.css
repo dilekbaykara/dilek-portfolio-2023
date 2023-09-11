@@ -284,6 +284,7 @@ i {
   display: grid;
   grid-template-columns: 2;
   grid-template-rows: 6;
+
   gap: 1rem;
   justify-content: center;
   align-items: center;
@@ -325,8 +326,8 @@ i {
 }
 
 #img-div {
-  display: flex;
   grid-column: 2;
+  grid-row: 2/4;
 }
 
 #skills-div {
