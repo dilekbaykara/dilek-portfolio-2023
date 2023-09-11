@@ -3,8 +3,6 @@
 }
 
 .App {
-  display: flex;
-  flex-direction: column;
   align-items: center;
   text-align: center;
   position: absolute;
@@ -51,12 +49,10 @@
 }
 
 .nav-container .checkbox {
-  position: absolute;
+  position: fixed;
   display: block;
   height: 32px;
   width: 32px;
-  top: 20px;
-  left: 20px;
   z-index: 5;
   opacity: 0;
   cursor: pointer;
@@ -66,10 +62,9 @@
   height: 26px;
   width: 32px;
   margin-top: 0;
-  margin: 1rem;
 
   background: transparent;
-  position: fixed;
+
   z-index: 2;
   display: flex;
   flex-direction: column;
@@ -186,14 +181,14 @@ p {
   background: transparent;
 }
 
-.project-div-1 {
-  background: transparent;
+/* .project-div-1 {
+  background: inherit;
 }
 
 .project-div-1 :hover {
-  background: transparent;
-  background-color: transparent;
-}
+  background: inherit;
+  background-color: inherit;
+} */
 
 #name-div-2 {
   display: flex;
@@ -245,7 +240,7 @@ i {
   margin-left: 10rem;
   width: 71rem;
   font-size: 1.5rem;
-  margin-top: -2rem;
+  margin-top: 2rem;
 }
 
 #button-div {
@@ -286,9 +281,10 @@ i {
 }
 
 .project-box {
-  display: flex;
-  flex-direction: row;
-  gap: 4rem;
+  display: grid;
+  grid-template-columns: 2;
+  grid-template-rows: 6;
+  gap: 1rem;
   justify-content: center;
   align-items: center;
 }
@@ -320,6 +316,17 @@ i {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+}
+
+.project-name,
+.project-lang,
+.project-info {
+  grid-column: 1;
+}
+
+#img-div {
+  display: flex;
+  grid-column: 2;
 }
 
 #skills-div {
@@ -519,4 +526,12 @@ p:hover {
 #resume-title {
   color: #14252e;
   text-shadow: 3px 1.6px 0px #9893da;
+}
+
+@media (max-width: 768px) {
+  .container,
+  .nav-container {
+    width: 100%;
+    height: auto;
+  }
 }
