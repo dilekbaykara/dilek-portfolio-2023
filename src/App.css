@@ -62,9 +62,7 @@
   height: 26px;
   width: 32px;
   margin-top: 0;
-
   background: transparent;
-
   z-index: 2;
   display: flex;
   flex-direction: column;
@@ -97,9 +95,7 @@
   width: 100%;
   transform: translate(-150%);
   display: flex;
-
   margin-left: -40px;
-
   transition: transform 0.5s ease-in-out;
   text-align: center;
   background-color: transparent;
@@ -225,6 +221,11 @@ i {
   color: #14252e;
   text-shadow: 4px 1.6px 0px #9893da;
 }
+
+#italic-name {
+  flex-wrap: nowrap;
+}
+
 #pic-div {
   margin: 8px;
 }
@@ -529,10 +530,54 @@ p:hover {
   text-shadow: 3px 1.6px 0px #9893da;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1075px) {
+  #name-div-1,
+  #name-div-2 {
+    font-size: 5rem;
+  }
+  #italic-name {
+    flex-wrap: nowrap;
+  }
+  #about-me-div {
+    width: 50%;
+  }
   .container,
   .nav-container {
-    width: 100%;
+    right: 0;
+    margin: 1rem;
     height: auto;
+  }
+  #skills-icons-div {
+    width: 50%;
+  }
+}
+@media (min-width: 1000px) {
+  #italic-name {
+    flex-wrap: nowrap;
+  }
+  .container,
+  .nav-container {
+    right: 0;
+    margin: 1rem;
+    height: auto;
+  }
+  #skills-icons-div {
+    width: 80%;
+  }
+}
+
+@media (max-width: 730px) {
+  #text-box {
+    flex-direction: column;
+  }
+  #italic-name {
+    flex-wrap: nowrap;
+  }
+  #name-div-1,
+  #name-div-2 {
+    font-size: 4rem;
+  }
+  #skills-icons-div {
+    width: 30%;
   }
 }
