@@ -150,10 +150,26 @@ p {
 
 #e-bird-img {
   height: 150px;
+  border-radius: 10px;
+  z-index: 2;
 }
 
 #img-div {
   display: flex;
+  border-right: solid 20px #9893da;
+  border-top: solid 20px #9893da;
+  border-radius: 10px;
+}
+
+.shadow-box {
+  content: "";
+  position: absolute;
+  top: 72rem;
+  left: 969px;
+  width: 221px;
+  height: 150px;
+  background: #9893da;
+  border-radius: 5px;
 }
 
 #button-div {
@@ -530,6 +546,12 @@ p:hover {
   text-shadow: 3px 1.6px 0px #9893da;
 }
 
+@media (min-width: 900px) {
+  #italic-name {
+    flex-wrap: nowrap;
+  }
+}
+
 @media (max-width: 1075px) {
   #name-div-1,
   #name-div-2 {
@@ -554,6 +576,9 @@ p:hover {
 @media (min-width: 1000px) {
   #italic-name {
     flex-wrap: nowrap;
+  }
+  #about-me-div {
+    width: 80%;
   }
   .container,
   .nav-container {

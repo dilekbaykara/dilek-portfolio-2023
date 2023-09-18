@@ -34,6 +34,7 @@ function Projects() {
 
           <div id="img-div">
             <img alt="project-preview" src={eBirdImage} id="e-bird-img"></img>
+            {/* <div className="shadow-box"></div> */}
           </div>
         </div>
       </div>
