@@ -25,6 +25,7 @@
 .nav-container {
   position: fixed;
   z-index: 2;
+  background-color: transparent;
 }
 
 .navbar .menu-items {
@@ -134,10 +135,6 @@
   font-weight: 600;
   font-style: normal;
   font-size: 8rem;
-  /* font-family: "stevie-sans", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 8rem; */
   border: 1px solid #0000;
 }
 
@@ -156,9 +153,20 @@ p {
 
 #img-div {
   display: flex;
-  border-right: solid 20px #9893da;
-  border-top: solid 20px #9893da;
+  border: solid 4px #6f00de;
   border-radius: 10px;
+  object-fit: cover;
+  filter: saturate(40%);
+  transition: 0.3s ease;
+}
+
+#img-div:hover {
+  display: flex;
+  border: solid 4px #6f00de;
+  border-radius: 10px;
+  object-fit: cover;
+  filter: saturate(100%);
+  transition: 0.3s ease;
 }
 
 .shadow-box {
@@ -191,16 +199,8 @@ p {
   margin-left: 3rem;
   margin-right: 3rem;
   background: transparent;
+  align-items: center;
 }
-
-/* .project-div-1 {
-  background: inherit;
-}
-
-.project-div-1 :hover {
-  background: inherit;
-  background-color: inherit;
-} */
 
 #name-div-2 {
   display: flex;
@@ -299,12 +299,19 @@ i {
 
 .project-box {
   display: grid;
-  grid-template-columns: 2;
-  grid-template-rows: 6;
-
-  gap: 1rem;
+  border: solid 3px;
+  column-gap: 4rem;
   justify-content: center;
   align-items: center;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.project-box:hover {
+  box-shadow: 1px 1px 0 0 var(--color-text-lighter),
+    2px 2px 0 0 var(--color-text-lighter), 3px 3px 0 0 var(--color-text-lighter);
+  transform: rotateZ(2);
+  transition: transform 0.3s, box-shadow 0.35s;
 }
 
 #projects-div {
@@ -529,11 +536,6 @@ p:hover {
   pointer-events: none;
 }
 
-.project-box {
-  border-radius: 20px;
-  padding: 30px;
-}
-
 #project {
   margin-top: 12rem;
   margin-bottom: 20rem;
@@ -555,10 +557,7 @@ p:hover {
 @media (max-width: 1075px) {
   #name-div-1,
   #name-div-2 {
-    font-size: 5rem;
-  }
-  #italic-name {
-    flex-wrap: nowrap;
+    font-size: 6.5rem;
   }
   #about-me-div {
     width: 50%;
@@ -603,6 +602,51 @@ p:hover {
     font-size: 4rem;
   }
   #skills-icons-div {
-    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #project-title,
+  #resume-title,
+  #skills-title {
+    display: flex;
+    justify-content: center;
+  }
+  .project-box {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  #name-div-1 {
+    display: flex;
+    flex-direction: column;
+  }
+  #name-div-2 {
+    display: flex;
+    flex-direction: column;
+  }
+  #project-title,
+  #resume-title,
+  #skills-title {
+    display: flex;
+    justify-content: center;
+  }
+
+  .project-box {
+    display: flex;
+    flex-direction: column;
+  }
+  #skills-icons-div {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 856px) {
+  #text-box {
+    display: flex;
+    flex-direction: column;
   }
 }
