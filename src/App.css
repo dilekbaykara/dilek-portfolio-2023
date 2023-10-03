@@ -146,23 +146,23 @@ p {
 }
 
 #e-bird-img {
-  height: 150px;
+  height: 166px;
   border-radius: 10px;
   z-index: 2;
+  background: transparent;
 }
 
 #img-div {
   display: flex;
-  border: solid 4px #6f00de;
   border-radius: 10px;
   object-fit: cover;
   filter: saturate(40%);
-  transition: 0.3s ease;
+  background: transparent;
 }
 
 #img-div:hover {
   display: flex;
-  border: solid 4px #6f00de;
+
   border-radius: 10px;
   object-fit: cover;
   filter: saturate(100%);
@@ -258,6 +258,7 @@ i {
   width: 71rem;
   font-size: 1.5rem;
   margin-top: 2rem;
+  color: #14252e;
 }
 
 #button-div {
@@ -297,35 +298,49 @@ i {
   box-shadow: 10px 8px black;
 }
 
-.project-box {
+#project-box {
   display: grid;
-  border: solid 3px;
+  border: solid 3px #3e3c59;
   column-gap: 4rem;
   justify-content: center;
+  border: solid #6f00de;
   align-items: center;
+  background-color: #9893da1f;
   border-radius: 20px;
   padding: 30px;
 }
 
-.project-box:hover {
-  box-shadow: 1px 1px 0 0 var(--color-text-lighter),
-    2px 2px 0 0 var(--color-text-lighter), 3px 3px 0 0 var(--color-text-lighter);
-  transform: rotateZ(2);
-  transition: transform 0.3s, box-shadow 0.35s;
-}
-
-#projects-div {
+#project-name {
   display: flex;
-  flex-direction: column;
-  margin: 3rem;
-}
-
-.project-name {
-  font-family: "stevie-sans", sans-serif;
-  font-weight: 500;
+  font-family: "gelica", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 3rem;
   font-style: bold;
-  display: flex;
+  align-items: center;
   font-size: 2.5rem;
+  gap: 1rem;
+  background: transparent;
+}
+
+.svg-span {
+  position: relative;
+  top: -2px;
+  margin-left: 10px;
+  background-color: transparent;
+}
+
+#arrow {
+  background-color: transparent;
+  height: 1.5rem;
+  width: 1.5rem;
+  transition: transform 0.3s ease;
+  z-index: 1;
+}
+
+#project-box:hover #arrow {
+  cursor: pointer;
+  transform: translate(5px, -5px) scale(1.5);
 }
 
 .project-lang {
@@ -396,6 +411,8 @@ i {
   padding: 1rem;
   align-items: center;
   border-radius: 20px;
+  border: solid;
+  box-shadow: 10px 8px #14252e;
 }
 @keyframes enter-animation {
   0% {
@@ -499,6 +516,7 @@ a:active.button {
   display: flex;
   font-size: 2rem;
   margin: 3rem;
+  color: #14252e;
 }
 
 #footer {
@@ -514,10 +532,10 @@ a:active.button {
 #projects-div {
   display: flex;
   border-radius: 20px;
-}
-
-#projects-div :hover {
-  background-color: #9893da1f;
+  display: flex;
+  flex-direction: column;
+  margin: 3rem;
+  /* box-shadow: 1px 1px 0 0 #3e3c59, 2px 2px 0 0 #3e3c59, 3px 3px 0 0 #3e3c59; */
 }
 
 .project-name,
@@ -611,7 +629,7 @@ p:hover {
     display: flex;
     justify-content: center;
   }
-  .project-box {
+  #project-box {
     display: flex;
     flex-direction: column;
   }
