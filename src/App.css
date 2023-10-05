@@ -160,9 +160,8 @@ p {
   background: transparent;
 }
 
-#img-div:hover {
+#project-box:hover #img-div {
   display: flex;
-
   border-radius: 10px;
   object-fit: cover;
   filter: saturate(100%);
