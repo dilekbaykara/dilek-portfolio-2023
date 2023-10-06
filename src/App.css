@@ -669,6 +669,13 @@ p:hover {
   }
 }
 
+#animated-icons-div {
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+  align-items: center;
+}
+
 .animate {
   animation-duration: 0.75s;
   animation-delay: 0.5s;
@@ -704,4 +711,25 @@ p:hover {
 }
 .delay-3 {
   animation-delay: 0.8s;
+}
+
+.delay-1,
+.delay-2,
+.delay-3 {
+  display: flex;
+  background-color: #ddd6e0;
+  color: #000000;
+  padding: 1rem;
+  align-items: center;
+  border-radius: 20px;
+  border: solid;
+  font-family: "stevie-sans", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.5rem;
+}
+
+#soft-skills {
+  margin: 2rem;
+  margin-left: 4rem;
 }

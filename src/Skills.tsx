@@ -22,13 +22,13 @@ function Skills() {
         <div className="skills-icons">Adobe Photoshop</div>
         <div className="skills-icons">Adobe Illustrator</div>
         <div className="skills-icons">Adobe After Effects</div>
-        <div>
-          <div id="animated-icons-div">
-            <div className="animate glow delay-1">Placeholder 1</div>
-            <div className="animate glow delay-2">Placeholder 2</div>
-            <div className="animate glow delay-3">Placeholder 3</div>
-          </div>
-        </div>
+        <div></div>
+      </div>
+      <div id="animated-icons-div">
+        <div id="soft-skills">Soft skills:</div>
+        <div className="animate glow delay-1">Placeholder 1</div>
+        <div className="animate glow delay-2">Placeholder 2</div>
+        <div className="animate glow delay-3">Placeholder 3</div>
       </div>
     </div>
   );
