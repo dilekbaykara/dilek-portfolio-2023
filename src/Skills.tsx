@@ -1,6 +1,35 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import "./SkillsAnimation.css";
+
+// interface ScrollAnimationProps {
+//   // Define any props you need here
+// }
 
 function Skills() {
+  const [animate, setAnimate] = useState(false);
+
+  // const elements = document.querySelectorAll("#skills-div")
+
+  useEffect(() => {
+    // Function to handle scroll events
+    const handleScroll = () => {
+      // Check if the user has scrolled to a certain position
+
+      if (window.scrollY > 200) {
+        // Adjust the threshold as needed
+        setAnimate(true);
+      }
+    };
+
+    // Attach the scroll event listener when the component mounts
+    window.addEventListener("scroll", handleScroll);
+
+    // Remove the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <div id="skills-div">
       <div id="skills-title"> Skills </div>
@@ -25,10 +54,12 @@ function Skills() {
         <div></div>
       </div>
       <div id="animated-icons-div">
-        <div id="soft-skills">Soft skills:</div>
-        <div className="animate glow delay-1">Placeholder 1</div>
-        <div className="animate glow delay-2">Placeholder 2</div>
-        <div className="animate glow delay-3">Placeholder 3</div>
+        <div className={`element ${animate ? "animate" : ""}`}>
+          <div id="soft-skills">Soft skills:</div>
+          <div className="animate glow delay-1">Placeholder 1</div>
+          <div className="animate glow delay-2">Placeholder 2</div>
+          <div className="animate glow delay-3">Placeholder 3</div>
+        </div>
       </div>
     </div>
   );

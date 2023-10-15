@@ -85,6 +85,7 @@ function App() {
         <Projects />
       </div>
       <Skills />
+
       <div ref={ref3}>
         <Resume />
       </div>
