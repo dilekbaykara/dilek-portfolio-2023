@@ -145,7 +145,8 @@ p {
   margin: 1px;
 }
 
-#e-bird-img {
+#e-bird-img,
+#to-do-img {
   height: 166px;
   border-radius: 10px;
   z-index: 2;

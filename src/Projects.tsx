@@ -1,5 +1,6 @@
 import React from "react";
 import eBirdImage from "./../src/images/e-bird.png";
+import ToDoListImage from "./../src/images/to-do.png";
 
 function Projects() {
   return (
@@ -57,7 +58,7 @@ function Projects() {
         </div>
         <div id="project-box">
           <div id="project-name">
-            MealPlan{" "}
+            To Do List{" "}
             <span className="svg-span">
               <svg
                 id="arrow"
@@ -74,8 +75,30 @@ function Projects() {
               </svg>
             </span>
           </div>
-          <div className="project-lang">
-            Next.js, SQL, Express, Prisma, and Typescript
+          <div className="project-lang">HTML, React, TypeScript, CSS</div>
+          <div className="project-info">
+            <p>
+              - Users can add tasks with due date and mark tasks are complete or
+              incomplete{" "}
+            </p>{" "}
+            <p>
+              {" "}
+              - For easier tracking, user can view tasks as All, Active, or Done
+            </p>{" "}
+            <p>
+              {" "}
+              - Implemented custom greeting for time of day with date display
+            </p>{" "}
+            <p>
+              {" "}
+              - Tasks are color coded in order of importance (Important or
+              Normal)
+            </p>
+          </div>
+
+          <div id="img-div">
+            <img alt="project-preview" src={ToDoListImage} id="to-do-img"></img>
+            {/* <div className="shadow-box"></div> */}
           </div>
         </div>
       </div>
