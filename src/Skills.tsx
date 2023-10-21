@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./SkillsAnimation.css";
-import self from "./images/self.png";
+import self from "./images/self.gif";
 
 // interface ScrollAnimationProps {
 //   // Define any props you need here
@@ -34,6 +34,9 @@ function Skills() {
   return (
     <div id="skills-div">
       <div id="skills-title"> Skills </div>
+      <div id="self-div">
+        <img alt="self" src={self} id="self"></img>
+      </div>
       <div id="skills-icons-div">
         <div className="skills-icons">Javascript</div>
         <div className="skills-icons">Node.js</div>
@@ -52,18 +55,6 @@ function Skills() {
         <div className="skills-icons">Adobe Photoshop</div>
         <div className="skills-icons">Adobe Illustrator</div>
         <div className="skills-icons">Adobe After Effects</div>
-        <div></div>
-      </div>
-      <div id="animated-icons-div">
-        <div className={`element ${animate ? "animate" : ""}`}>
-          <div id="soft-skills">Soft skills:</div>
-          <div className="animate glow delay-1">Placeholder 1</div>
-          <div className="animate glow delay-2">Placeholder 2</div>
-          <div className="animate glow delay-3">Placeholder 3</div>
-        </div>
-        <div>
-          <img alt="self" src={self} id="self"></img>
-        </div>
       </div>
     </div>
   );

@@ -604,7 +604,7 @@ p:hover {
     height: auto;
   }
   #skills-icons-div {
-    width: 80%;
+    width: 100%;
   }
 }
 
@@ -676,7 +676,11 @@ p:hover {
   align-items: center;
 }
 
-#soft-skills {
-  margin: 2rem;
-  margin-left: 4rem;
+#self-div {
+  display: flex;
+  justify-content: center;
+}
+
+#self {
+  height: 400px;
 }
