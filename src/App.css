@@ -338,6 +338,10 @@ i {
   z-index: 1;
 }
 
+#project-box:hover {
+  cursor: pointer;
+}
+
 #project-box:hover #arrow {
   cursor: pointer;
   transform: translate(5px, -5px) scale(1.5);

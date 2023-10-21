@@ -2,12 +2,22 @@ import React from "react";
 import eBirdImage from "./../src/images/e-bird.png";
 import ToDoListImage from "./../src/images/to-do.png";
 
+const handleClick1 = () => {
+  const url = "https://github.com/dilekbaykara/bird-crawler";
+  window.open(url, "_blank");
+};
+
+const handleClick2 = () => {
+  const url = "https://dilekbaykara.github.io/to-do-list/";
+  window.open(url, "_blank");
+};
+
 function Projects() {
   return (
     <div id="project">
       <div id="project-title">Projects</div>
       <div id="projects-div">
-        <div id="project-box">
+        <div id="project-box" onClick={handleClick1}>
           <div id="project-name">
             eBird App{" "}
             <span className="svg-span">
@@ -56,7 +66,7 @@ function Projects() {
             {/* <div className="shadow-box"></div> */}
           </div>
         </div>
-        <div id="project-box">
+        <div id="project-box" onClick={handleClick2}>
           <div id="project-name">
             To Do List{" "}
             <span className="svg-span">
