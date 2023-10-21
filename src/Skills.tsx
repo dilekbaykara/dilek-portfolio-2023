@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./SkillsAnimation.css";
+import self from "./images/self.png";
 
 // interface ScrollAnimationProps {
 //   // Define any props you need here
@@ -59,6 +60,9 @@ function Skills() {
           <div className="animate glow delay-1">Placeholder 1</div>
           <div className="animate glow delay-2">Placeholder 2</div>
           <div className="animate glow delay-3">Placeholder 3</div>
+        </div>
+        <div>
+          <img alt="self" src={self} id="self"></img>
         </div>
       </div>
     </div>
