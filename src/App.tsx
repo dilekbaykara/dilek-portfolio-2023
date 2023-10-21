@@ -12,6 +12,7 @@ function App() {
   const ref = useRef<HTMLDivElement>(null);
   const ref2 = useRef<HTMLDivElement>(null);
   const ref3 = useRef<HTMLDivElement>(null);
+  const ref4 = useRef<HTMLDivElement>(null);
 
   const handleClick = () => {
     ref.current?.scrollIntoView({ behavior: "smooth" });
@@ -23,6 +24,10 @@ function App() {
 
   const handleClick3 = () => {
     ref3.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const handleClick4 = () => {
+    ref4.current?.scrollIntoView({ behavior: "smooth" });
   };
   return (
     <div className="App" ref={ref}>
@@ -46,6 +51,9 @@ function App() {
                 Projects{" "}
               </button>
               <button className="header-buttons" onClick={handleClick3}>
+                Skills{" "}
+              </button>
+              <button className="header-buttons" onClick={handleClick4}>
                 Resume{" "}
               </button>
             </div>
@@ -84,9 +92,12 @@ function App() {
       <div ref={ref2}>
         <Projects />
       </div>
-      <Skills />
 
       <div ref={ref3}>
+        <Skills />
+      </div>
+
+      <div ref={ref4}>
         <Resume />
       </div>
       <Footer />
