@@ -13,6 +13,11 @@ const handleClick2 = () => {
   window.open(url, "_blank");
 };
 
+const handleClick3 = () => {
+  const url = "https://dilekbaykara.github.io/weather-app/";
+  window.open(url, "_blank");
+};
+
 function Projects() {
   return (
     <div id="project">
@@ -112,7 +117,7 @@ function Projects() {
             {/* <div className="shadow-box"></div> */}
           </div>
         </div>
-        <div id="project-box" onClick={handleClick2}>
+        <div id="project-box" onClick={handleClick3}>
           <div id="project-name">
             Weather App{" "}
             <span className="svg-span">
