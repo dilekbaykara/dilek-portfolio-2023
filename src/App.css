@@ -690,6 +690,7 @@ p:hover {
 
 #self {
   height: 400px;
+  margin-top: 2rem;
 }
 
 svg {
