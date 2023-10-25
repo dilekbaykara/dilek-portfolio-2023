@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/dilek-portfolio-2023/static/css/main.f6ad8353.css",
+    "main.js": "/dilek-portfolio-2023/static/js/main.3d97dc31.js",
+    "static/js/787.7efd31bd.chunk.js": "/dilek-portfolio-2023/static/js/787.7efd31bd.chunk.js",
+    "static/media/e-bird.png": "/dilek-portfolio-2023/static/media/e-bird.15dcafe29c866ee13fb1.png",
+    "static/media/to-do.png": "/dilek-portfolio-2023/static/media/to-do.6ec7c08d74da11dc6d94.png",
+    "static/media/weather-app.png": "/dilek-portfolio-2023/static/media/weather-app.480cb1cd1ebb73e02a04.png",
+    "static/media/Portrait.png": "/dilek-portfolio-2023/static/media/Portrait.3032fceb3bc18144b129.png",
+    "static/media/self.gif": "/dilek-portfolio-2023/static/media/self.76487542407fed8aaf09.gif",
+    "index.html": "/dilek-portfolio-2023/index.html",
+    "main.f6ad8353.css.map": "/dilek-portfolio-2023/static/css/main.f6ad8353.css.map",
+    "main.3d97dc31.js.map": "/dilek-portfolio-2023/static/js/main.3d97dc31.js.map",
+    "787.7efd31bd.chunk.js.map": "/dilek-portfolio-2023/static/js/787.7efd31bd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f6ad8353.css",
+    "static/js/main.3d97dc31.js"
+  ]
+}
