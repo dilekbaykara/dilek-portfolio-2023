@@ -43,9 +43,7 @@ function Skills() {
         <div className="skills-icons">Typescript</div>
         <div className="skills-icons">React.js</div>
         <div className="skills-icons">SQL</div>
-        <div className="skills-icons">Express</div>
-        <div className="skills-icons">Prisma</div>
-        <div className="skills-icons">Xcode</div>
+        <div className="skills-icons">React Native</div>
         <div className="skills-icons">Git</div>
         <div className="skills-icons">Next.js</div>
         <div className="skills-icons">CSS</div>
