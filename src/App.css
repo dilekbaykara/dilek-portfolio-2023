@@ -715,3 +715,93 @@ svg:hover {
   justify-content: center;
   margin: 1rem;
 }
+
+@media (max-width: 414px) {
+  #root {
+    max-width: 100%;
+    overflow-x: hidden;
+    height: 100%;
+  }
+  .App {
+    max-width: 100%;
+    overflow-x: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #about-me-div {
+    display: flex;
+    width: 20rem;
+    margin: 0;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #name-div-1,
+  #name-div-2 {
+    font-size: 3.5rem;
+  }
+  #italic-name {
+    width: 23rem;
+  }
+  .navbar {
+    display: none;
+  }
+
+  #skills-icons-div {
+    width: 50%;
+  }
+
+  #project {
+    margin-top: 10rem;
+    display: flex;
+    width: 29rem;
+    margin-left: 0;
+    margin-right: 0;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 6rem;
+  }
+  #projects-div {
+    margin-top: 0rem;
+  }
+  #project-box {
+    margin: 4px;
+    width: 18rem;
+  }
+  #img-div {
+    margin: 8px;
+  }
+  #skills-div {
+    margin-top: 0rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  #self {
+    height: 300px;
+  }
+  #resume-div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  #resume-description {
+    width: 20rem;
+  }
+  .icon-footer {
+    width: 20rem;
+  }
+  #footer {
+    display: flex;
+    width: 20rem;
+    align-items: center;
+  }
+}
