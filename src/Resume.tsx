@@ -1,5 +1,7 @@
 import React from "react";
 
+const resumePDF = pdf("Dilek_Baykara_Resume_2023.pdf");
+
 function Resume() {
   return (
     <div id="resume-div">
@@ -8,10 +10,14 @@ function Resume() {
         If you would like to work together, please reach out!
       </div>
       <div id="resume-button-div">
-        <button className="resume-button"> Download Resume </button>
+        <a href={resumePDF} download={resumePDF}>
+          <button className="resume-button"> Download Resume </button>
+        </a>
       </div>
     </div>
   );
 }
-
 export default Resume;
+function pdf(pdfFile: string): string {
+  return pdfFile;
+}

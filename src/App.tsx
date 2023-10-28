@@ -3,10 +3,13 @@ import logo from "./logo.svg";
 import "./App.css";
 import Projects from "./Projects";
 import Resume from "./Resume";
-
+import ReactGA from "react-ga4";
 import Portrait from "./../src/images/Portrait.png";
 import Skills from "./Skills";
 import Footer from "./Footer";
+
+const TRACKING_ID = "G-XRHXYD76M5"; // OUR_TRACKING_ID
+ReactGA.initialize(TRACKING_ID);
 
 function App() {
   const ref = useRef<HTMLDivElement>(null);
