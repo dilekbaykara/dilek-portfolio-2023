@@ -604,6 +604,7 @@ p:hover {
   #about-me-div {
     width: 80%;
   }
+
   .container,
   .nav-container {
     right: 0;
@@ -626,6 +627,7 @@ p:hover {
   #name-div-2 {
     font-size: 4rem;
   }
+
   #skills-icons-div {
     display: flex;
     flex-wrap: wrap;
@@ -716,6 +718,83 @@ svg:hover {
   margin: 1rem;
 }
 
+#activity-title {
+  display: flex;
+  justify-content: center;
+  font-family: "gelica", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 3rem;
+  font-style: bold;
+  align-items: center;
+  font-size: 2.5rem;
+  background: transparent;
+  color: #14252e;
+  text-shadow: 3px 1.6px 0px #9893da;
+  margin: 2rem;
+}
+
+#activities {
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#media-div-1 {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+#media-div-2 {
+  display: flex;
+  flex-direction: row-reverse;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.vol-p {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  padding: 10px;
+}
+
+#vol-div-1 {
+  display: flex;
+  flex-direction: row;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  padding: 30px;
+}
+
+#vol-div-2 {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  padding: 30px;
+}
+
+#vol-div,
+#fund-div {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+#volunteer,
+#mor-cati {
+  height: 20rem;
+  border-radius: 30px;
+  margin: 2rem;
+}
+
 @media (max-width: 414px) {
   #root {
     max-width: 100%;
@@ -754,13 +833,43 @@ svg:hover {
   .navbar {
     display: none;
   }
+  #activities {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .media-div {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  #media-div-1,
+  #media-div-2 {
+    all: unset;
+  }
+  #volunteer,
+  #mor-cati {
+    height: 14rem;
+  }
 
+  #vol-div-1,
+  #vol-div-2 {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+  }
+
+  #vol-img-div,
+  #fund-img-div {
+    display: flex;
+
+    justify-content: center;
+  }
   #skills-icons-div {
     width: 50%;
   }
 
   #project {
-    margin-top: 10rem;
+    margin-top: 1rem;
     display: flex;
     width: 29rem;
     margin-left: 0;
@@ -768,6 +877,10 @@ svg:hover {
     justify-content: center;
     flex-direction: column;
     margin-bottom: 6rem;
+  }
+
+  #project-name {
+    display: block;
   }
   #projects-div {
     margin-top: 0rem;

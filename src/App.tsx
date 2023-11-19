@@ -7,6 +7,7 @@ import ReactGA from "react-ga4";
 import Portrait from "./../src/images/Portrait.png";
 import Skills from "./Skills";
 import Footer from "./Footer";
+import Activities from "./Activities";
 
 const TRACKING_ID = "G-XRHXYD76M5"; // OUR_TRACKING_ID
 ReactGA.initialize(TRACKING_ID);
@@ -90,6 +91,9 @@ function App() {
             over several years to make sure the design supports the function of
             the website.
           </p>
+        </div>
+        <div>
+          <Activities />
         </div>
       </div>
       <div ref={ref2}>
