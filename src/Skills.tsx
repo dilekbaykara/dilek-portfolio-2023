@@ -38,6 +38,7 @@ function Skills() {
         <img alt="self" src={self} id="self"></img>
       </div>
       <div id="skills-icons-div">
+        <div className="skills-icons">Java</div>
         <div className="skills-icons">Javascript</div>
         <div className="skills-icons">Node.js</div>
         <div className="skills-icons">Typescript</div>
