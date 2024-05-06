@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/static/css/main.d429b670.css",
-    "main.js": "/static/js/main.b624213b.js",
+    "main.js": "/static/js/main.3057804b.js",
     "static/js/787.7efd31bd.chunk.js": "/static/js/787.7efd31bd.chunk.js",
     "static/media/Volunteer.png": "/static/media/Volunteer.9cb2aa455d222d978a43.png",
     "static/media/e-bird.png": "/static/media/e-bird.15dcafe29c866ee13fb1.png",
-    "static/media/to-do.png": "/static/media/to-do.6ec7c08d74da11dc6d94.png",
-    "static/media/weather-app.png": "/static/media/weather-app.480cb1cd1ebb73e02a04.png",
+    "static/media/to-do.png": "/static/media/to-do.3ace427a628d653dda42.png",
+    "static/media/weather-app.png": "/static/media/weather-app.bdbc7af11ace284079f6.png",
     "static/media/Portrait.png": "/static/media/Portrait.3032fceb3bc18144b129.png",
     "static/media/self.gif": "/static/media/self.76487542407fed8aaf09.gif",
     "static/media/MorCati.png": "/static/media/MorCati.47969e18b4e57fc6487d.png",
     "index.html": "/index.html",
     "main.d429b670.css.map": "/static/css/main.d429b670.css.map",
-    "main.b624213b.js.map": "/static/js/main.b624213b.js.map",
+    "main.3057804b.js.map": "/static/js/main.3057804b.js.map",
     "787.7efd31bd.chunk.js.map": "/static/js/787.7efd31bd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d429b670.css",
-    "static/js/main.b624213b.js"
+    "static/js/main.3057804b.js"
   ]
 }
