@@ -1,6 +1,6 @@
 import React from "react";
 import eBirdImage from "./../src/images/e-bird.png";
-import ToDoListImage from "./../src/images/to-do.png";
+import MealFridgeImage from "./../src/images/to-do.png";
 import weatherAppImage from "./../src/images/weather-app.png";
 
 const handleClick1 = () => {
@@ -9,12 +9,12 @@ const handleClick1 = () => {
 };
 
 const handleClick2 = () => {
-  const url = "https://dilekbaykara.github.io/to-do-list/";
+  const url = "https://github.com/dilekbaykara/meal-fridge";
   window.open(url, "_blank");
 };
 
 const handleClick3 = () => {
-  const url = "https://dilekbaykara.github.io/weather-app/";
+  const url = "https://github.com/dilekbaykara/currency-changer";
   window.open(url, "_blank");
 };
 
@@ -74,7 +74,7 @@ function Projects() {
         </div>
         <div id="project-box" onClick={handleClick2}>
           <div id="project-name">
-            To Do List{" "}
+            MealFridge{" "}
             <span className="svg-span">
               <svg
                 id="arrow"
@@ -91,35 +91,36 @@ function Projects() {
               </svg>
             </span>
           </div>
-          <div className="project-lang">HTML, React, TypeScript, CSS</div>
+          <div className="project-lang">React Native, SQL</div>
           <div className="project-info">
             <p>
-              - Users can add tasks with due date and mark tasks are complete or
-              incomplete{" "}
+              - Application that assists users in managing their home food
+              ecosystem{" "}
             </p>{" "}
             <p>
               {" "}
-              - For easier tracking, user can view tasks as All, Active, or Done
+              - Users can maintain an inventory of ingredients, create recipes,
+              and meal plans
             </p>{" "}
             <p>
               {" "}
-              - Implemented custom greeting for time of day with date display
+              - Users can automatically add missing inventory to shopping lists
+              for convenience
             </p>{" "}
-            <p>
-              {" "}
-              - Tasks are color coded in order of importance (Important or
-              Normal)
-            </p>
           </div>
 
           <div id="img-div">
-            <img alt="project-preview" src={ToDoListImage} id="to-do-img"></img>
+            <img
+              alt="project-preview"
+              src={MealFridgeImage}
+              id="to-do-img"
+            ></img>
             {/* <div className="shadow-box"></div> */}
           </div>
         </div>
         <div id="project-box" onClick={handleClick3}>
           <div id="project-name">
-            Weather App{" "}
+            Currency Changer{" "}
             <span className="svg-span">
               <svg
                 id="arrow"
@@ -136,16 +137,16 @@ function Projects() {
               </svg>
             </span>
           </div>
-          <div className="project-lang">React, TypeScript, Public API, CSS</div>
+          <div className="project-lang">Kotlin, Android Jetpack</div>
           <div className="project-info">
             <p>
-              - Weather App that displays temperature details, 5 day forecast,
-              and hourly forecast graph for 24 hr period{" "}
+              - Mobile application that provides up-to-date exchange rates for
+              over 100 currencies worldwide{" "}
             </p>
-            <p> - Displays Celcius and Fahrenheit temperature</p>{" "}
-            <p> - Users can search city and receive weather forecast. </p>{" "}
             <p>
-              - Users can use geo location function to receive weather forecast.
+              {" "}
+              - Clean and minimal interface allows for effortless input and
+              conversion between currencies.
             </p>{" "}
           </div>
 
