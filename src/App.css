@@ -383,7 +383,8 @@ i {
 
 #skills-title,
 #resume-title,
-#project-title {
+#project-title,
+#ui-title {
   display: flex;
   font-family: "gelica", sans-serif;
   font-weight: 600;
@@ -406,6 +407,16 @@ i {
   flex-direction: row;
   flex-wrap: wrap;
   margin: 3rem;
+}
+
+.ui-div {
+  margin: 3rem;
+}
+
+#cc-ui {
+  margin: 2rem;
+  width: 1200px;
+  border-radius: 50px;
 }
 
 .skills-icons {
@@ -510,7 +521,7 @@ a:active.button {
 }
 
 #resume-button-div {
-  margin: 10rem;
+  margin: 5rem;
 }
 
 #resume-description {
@@ -568,7 +579,8 @@ p:hover {
 
 #project-title,
 #skills-title,
-#resume-title {
+#resume-title,
+#ui-title {
   color: #14252e;
   text-shadow: 3px 1.6px 0px #9893da;
 }
@@ -892,6 +904,7 @@ svg:hover {
   #img-div {
     margin: 8px;
   }
+
   #skills-div {
     margin-top: 0rem;
     margin-bottom: 6rem;

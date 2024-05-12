@@ -1,6 +1,6 @@
 import React from "react";
 
-const resumePDF = pdf("Dilek_Baykara_Resume_2023_4.pdf");
+const resumePDF = pdf("Dilek_Baykara_Resume_2024.pdf");
 
 function Resume() {
   return (

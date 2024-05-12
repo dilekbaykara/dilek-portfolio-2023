@@ -1,7 +1,7 @@
 import React from "react";
 import eBirdImage from "./../src/images/e-bird.png";
 import MealFridgeImage from "./../src/images/to-do.png";
-import weatherAppImage from "./../src/images/weather-app.png";
+import CCAppImage from "./../src/images/cc-app.png";
 
 const handleClick1 = () => {
   const url = "https://github.com/dilekbaykara/bird-crawler";
@@ -120,7 +120,7 @@ function Projects() {
         </div>
         <div id="project-box" onClick={handleClick3}>
           <div id="project-name">
-            Currency Changer{" "}
+            Currency Converter{" "}
             <span className="svg-span">
               <svg
                 id="arrow"
@@ -151,11 +151,7 @@ function Projects() {
           </div>
 
           <div id="img-div">
-            <img
-              alt="project-preview"
-              src={weatherAppImage}
-              id="to-do-img"
-            ></img>
+            <img alt="project-preview" src={CCAppImage} id="to-do-img"></img>
             {/* <div className="shadow-box"></div> */}
           </div>
         </div>

@@ -45,6 +45,8 @@ function Skills() {
         <div className="skills-icons">React.js</div>
         <div className="skills-icons">SQL</div>
         <div className="skills-icons">React Native</div>
+        <div className="skills-icons">Kotlin</div>
+        <div className="skills-icons">Android SDK</div>
         <div className="skills-icons">Git</div>
         <div className="skills-icons">Next.js</div>
         <div className="skills-icons">CSS</div>

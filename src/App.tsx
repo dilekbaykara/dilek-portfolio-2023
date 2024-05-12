@@ -2,6 +2,7 @@ import React, { MutableRefObject, useRef } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import Projects from "./Projects";
+import UIDesign from "./UIDesign";
 import Resume from "./Resume";
 import ReactGA from "react-ga4";
 import Portrait from "./../src/images/Portrait.png";
@@ -99,7 +100,9 @@ function App() {
       <div ref={ref2}>
         <Projects />
       </div>
-
+      <div>
+        <UIDesign/>
+      </div>
       <div ref={ref3}>
         <Skills />
       </div>
